@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="332a317072944d1c882224ec79489401" Name="Diagram1" ZoomLevel="34" >
+        <EntityTypeShape EntityType="DbModel.Role" Width="1.5" PointX="4.375" PointY="10.125" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="DbModel.User" Width="1.5" PointX="9.5" PointY="10" IsExpanded="true" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="DbModel.Person" Width="1.5" PointX="12.625" PointY="10.5" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="DbModel.Form" Width="1.5" PointX="7.625" PointY="13" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="DbModel.Module" Width="1.5" PointX="9.625" PointY="15.625" FillColor="128, 128, 255" />
+        <AssociationConnector Association="DbModel.UserPerson" />
+        <EntityTypeShape EntityType="DbModel.UserRole" Width="1.5" PointX="6.75" PointY="10" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="DbModel.RoleFormPermission" Width="2" PointX="4.875" PointY="13" FillColor="128, 128, 255" />
+        <AssociationConnector Association="DbModel.RoleModuleRole" />
+        <AssociationConnector Association="DbModel.UserRoleRole" />
+        <AssociationConnector Association="DbModel.UserRoleUser" />
+        <EntityTypeShape EntityType="DbModel.Permission" Width="1.5" PointX="2.875" PointY="13" FillColor="128, 128, 255" />
+        <AssociationConnector Association="DbModel.RoleModulePermission" />
+        <EntityTypeShape EntityType="DbModel.FormModule" Width="1.5" PointX="7.125" PointY="15.875" FillColor="128, 128, 255" />
+        <AssociationConnector Association="DbModel.FormModuleForm" />
+        <AssociationConnector Association="DbModel.FormModuleModule" />
+        <EntityTypeShape EntityType="DbModel.Department" Width="1.5" PointX="11" PointY="5.625" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="DbModel.City" Width="1.5" PointX="14.25" PointY="5.625" FillColor="192, 192, 255" />
+        <AssociationConnector Association="DbModel.PersonCity" ManuallyRouted="false" >
+        </AssociationConnector>
+        <EntityTypeShape EntityType="DbModel.Card" Width="1.5" PointX="20.125" PointY="13.875" FillColor="192, 192, 255" />
+        <EntityTypeShape EntityType="DbModel.Organization" Width="1.5" PointX="23.875" PointY="5.375" FillColor="255, 224, 192" />
+        <EntityTypeShape EntityType="DbModel.OrganizationalUnit" Width="2.125" PointX="21.25" PointY="9.5" FillColor="255, 224, 192" />
+        <EntityTypeShape EntityType="DbModel.InternalDivision" Width="1.75" PointX="24.875" PointY="11" FillColor="255, 224, 192" />
+        <AssociationConnector Association="DbModel.AssignmentOrganizationDivision" />
+        <EntityTypeShape EntityType="DbModel.Branch" Width="1.5" PointX="21.375" PointY="5.375" FillColor="255, 224, 192" />
+        <AssociationConnector Association="DbModel.OrganizationBranch" />
+        <EntityTypeShape EntityType="DbModel.OrganizationalUnitBranch" Width="2.25" PointX="24.375" PointY="7.75" FillColor="255, 224, 192" />
+        <AssociationConnector Association="DbModel.DivisionBranchDivision" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="DbModel.DivisionBranchBranch" ManuallyRouted="false" >
+        </AssociationConnector>
+        <EntityTypeShape EntityType="DbModel.Event" Width="1.5" PointX="20.875" PointY="18.375" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="DbModel.EventType" Width="1.5" PointX="18.125" PointY="20.625" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="DbModel.AccessPoint" Width="1.5" PointX="18.125" PointY="17.625" FillColor="255, 192, 192" />
+        <AssociationConnector Association="DbModel.AccessPointEvent" />
+        <EntityTypeShape EntityType="DbModel.Attendance" Width="1.5" PointX="13.875" PointY="17.625" FillColor="255, 192, 192" />
+        <AssociationConnector Association="DbModel.AttendanceAccessPoint" />
+        <AssociationConnector Association="DbModel.EventEventType" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="DbModel.RoleFormPermissioForm" />
+        <AssociationConnector Association="DbModel.CityDepartment" />
+        <AssociationConnector Association="DbModel.AttendancePerson" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="DbModel.BranchCity" ManuallyRouted="false" >
+        </AssociationConnector>
+        <EntityTypeShape EntityType="DbModel.Profile" Width="1.5" PointX="16.25" PointY="14" FillColor="255, 224, 192" />
+        <EntityTypeShape EntityType="DbModel.PersonDivisionProfile" Width="1.875" PointX="17.875" PointY="11.125" FillColor="192, 192, 255" />
+        <AssociationConnector Association="DbModel.PersonDivisionProfileProfile" />
+        <AssociationConnector Association="DbModel.CardPersonDivisionProfile" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="DbModel.PersonDivisionProfilePerson1" />
+        <AssociationConnector Association="DbModel.PersonDivisionProfileInternalDivisions" />
+        <EntityTypeShape EntityType="DbModel.EventOrganizationalUnit" Width="2" PointX="29.875" PointY="18.375" IsExpanded="true" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="DbModel.EventInternalDivission" Width="1.875" PointX="27.125" PointY="18.375" FillColor="255, 192, 192" />
+        <EntityTypeShape EntityType="DbModel.EventProfile" Width="1.5" PointX="24.25" PointY="18.5" FillColor="255, 192, 192" />
+        <AssociationConnector Association="DbModel.EventProfileEvent" />
+        <AssociationConnector Association="DbModel.EventProfileProfile" ManuallyRouted="true" >
+          <ConnectorPoint PointX="24.25" PointY="18.8676688984375" />
+          <ConnectorPoint PointX="23.33605129261182" PointY="18.8676688984375" />
+          <ConnectorPoint PointX="23.33605129261182" PointY="17.375" />
+          <ConnectorPoint PointX="17" PointY="17.375" />
+          <ConnectorPoint PointX="17" PointY="15.787985026041667" />
+        </AssociationConnector>
+        <AssociationConnector Association="DbModel.EventDivissionEvent" ManuallyRouted="true" >
+          <ConnectorPoint PointX="30.875" PointY="19.97068359375" />
+          <ConnectorPoint PointX="30.875" PointY="21.12507183077879" />
+          <ConnectorPoint PointX="22.375" PointY="21.12507183077879" />
+        </AssociationConnector>
+        <AssociationConnector Association="DbModel.EventOrganizationalUnitOrganizationalUnit" />
+        <AssociationConnector Association="DbModel.EventInternalDivissionEvent" ManuallyRouted="true" >
+          <ConnectorPoint PointX="28.033921830693963" PointY="19.97068359375" />
+          <ConnectorPoint PointX="28.033921830693963" PointY="20.593147471754019" />
+          <ConnectorPoint PointX="22.375" PointY="20.593147471754019" />
+        </AssociationConnector>
+        <AssociationConnector Association="DbModel.EventInternalDivissionInternalDivision" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

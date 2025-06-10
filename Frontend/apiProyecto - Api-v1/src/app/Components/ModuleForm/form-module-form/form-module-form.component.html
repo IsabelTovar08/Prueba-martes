@@ -1,0 +1,32 @@
+<form [formGroup]="moduleFormForm">
+    <mat-dialog-content>
+
+        
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>module</mat-label>
+        <mat-select formControlName="moduleId">
+          <mat-option *ngFor="let module of modules" [value]="module.id">
+            {{ module.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>form</mat-label>
+        <mat-select formControlName="formId">
+          <mat-option *ngFor="let form of forms" [value]="form.id">
+            {{ form.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+     
+    </mat-dialog-content>
+  
+    <mat-dialog-actions align="end">
+      <button mat-button>Cancelar</button>
+      <button mat-flat-button color="primary" (click)="guardarform()" [disabled]="!moduleFormForm.valid">
+        {{ isEditMode ? 'Actualizar' : 'Guardar' }}
+      </button>
+    </mat-dialog-actions>
+  </form>
+  

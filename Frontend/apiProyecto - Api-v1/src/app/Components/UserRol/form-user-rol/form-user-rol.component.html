@@ -1,0 +1,32 @@
+<form [formGroup]="userRolForm">
+    <mat-dialog-content>
+
+        
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>user</mat-label>
+        <mat-select formControlName="userId">
+          <mat-option *ngFor="let user of users" [value]="user.id">
+            {{ user.userName }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>rol</mat-label>
+        <mat-select formControlName="rolId">
+          <mat-option *ngFor="let rol of roles" [value]="rol.id">
+            {{ rol.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+     
+    </mat-dialog-content>
+  
+    <mat-dialog-actions align="end">
+      <button mat-button>Cancelar</button>
+      <button mat-flat-button color="primary" (click)="guardarform()" [disabled]="!userRolForm.valid">
+        {{ isEditMode ? 'Actualizar' : 'Guardar' }}
+      </button>
+    </mat-dialog-actions>
+  </form>
+  

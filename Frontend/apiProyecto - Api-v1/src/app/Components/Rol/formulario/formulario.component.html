@@ -1,0 +1,25 @@
+<form [formGroup]="rolForm">
+    <mat-dialog-content>
+      <div class="inline-fields">
+        <mat-form-field appearance="fill" class="half-width">
+          <mat-label>Nombre del formulario</mat-label>
+          <input matInput formControlName="name" />
+        </mat-form-field>
+      </div>
+      <div class="inline-fields">
+        <mat-form-field appearance="fill" class="half-width">
+          <mat-label>Descripción</mat-label>
+          <input matInput formControlName="description" />
+        </mat-form-field>
+      </div>
+     
+    </mat-dialog-content>
+  
+    <mat-dialog-actions align="end">
+      <button mat-button>Cancelar</button>
+      <button mat-flat-button color="primary" (click)="guardarrol()" [disabled]="!rolForm.valid">
+        {{ isEditMode ? 'Actualizar' : 'Guardar' }}
+      </button>
+    </mat-dialog-actions>
+  </form>
+  

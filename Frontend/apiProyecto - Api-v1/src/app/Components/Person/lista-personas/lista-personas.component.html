@@ -1,0 +1,60 @@
+<h1>Person</h1>
+<div>Entidad restringida para el Administrador.</div>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Person</mat-card-title>
+        <button mat-raised-button color="primary"
+            (click)="openFormCreate()">Agregar Persona</button>
+    </mat-card-header>
+    <mat-table [dataSource]="person" class="mat-elevation-z8">
+            <ng-container matColumnDef="name">
+                <mat-header-cell *matHeaderCellDef>Nombres</mat-header-cell>
+                <mat-cell *matCellDef="let person">{{person.name}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="lastName">
+                <mat-header-cell *matHeaderCellDef>Apellidos</mat-header-cell>
+                <mat-cell
+                    *matCellDef="let person">{{person.lastName}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="identification">
+                <mat-header-cell *matHeaderCellDef>Ientificación</mat-header-cell>
+                <mat-cell
+                    *matCellDef="let person">{{person.identification}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="email">
+                <mat-header-cell *matHeaderCellDef>Email</mat-header-cell>
+                <mat-cell
+                    *matCellDef="let person">{{person.email}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="age">
+              <mat-header-cell *matHeaderCellDef>Edad</mat-header-cell>
+              <mat-cell
+                  *matCellDef="let person">{{person.age}}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="status" *ngIf="isAdmin">
+            <mat-header-cell *matHeaderCellDef>Status</mat-header-cell>
+            <mat-cell
+                *matCellDef="let person">
+                <p ><mat-slide-toggle [(ngModel)]="person.status" (click)="toggleIsActive(person)"></mat-slide-toggle></p>
+
+            </mat-cell>
+        </ng-container>
+            <ng-container matColumnDef="actions">
+                <mat-header-cell *matHeaderCellDef>Acciones</mat-header-cell>
+                <mat-cell *matCellDef="let person">
+                    <button mat-icon-button
+                        (click)="editperson(personeleccionado = person)">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-icon-button
+                        (click)="deleteperson(person)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row
+                *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+    </mat-card>

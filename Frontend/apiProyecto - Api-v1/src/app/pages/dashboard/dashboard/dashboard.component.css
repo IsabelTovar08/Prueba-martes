@@ -1,0 +1,58 @@
+.sidenav-container {
+  height: 100vh;
+  position: relative;
+}
+
+mat-sidenav {
+  width: 240px;
+  background-color: #fafafa;
+  padding: 16px;
+}
+
+mat-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidenav-section-title {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #9474fc;
+  padding-left: 8px;
+}
+
+mat-nav-list a {
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.2s;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+mat-nav-list a:hover {
+  background-color: #cea3ff;
+}
+
+.section-content {
+  padding: 24px;
+  background-color: #fafafa;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+/* Botón siempre visible arriba a la izquierda, encima del sidenav */
+.side-toggle-button {
+  position: fixed;
+  /* top: 16px; */
+  left: 16px;
+  z-index: 2000;
+  background-color: #b18cfe;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.side-toggle-button .menu{
+  position: relative;
+}

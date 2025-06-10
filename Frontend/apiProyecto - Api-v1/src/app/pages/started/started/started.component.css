@@ -1,0 +1,106 @@
+.start-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fff0f5, #fce4ec);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .center-icon {
+    font-size: 4rem;
+    z-index: 2;
+  }
+  
+  .icon-burst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    z-index: 1;
+  }
+  
+  .icon {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0;
+    transform: scale(0);
+    animation: expandIcon 0.8s forwards ease-out, floatIcon 3s infinite ease-in-out;
+  }
+  
+  .icon-1 { animation-delay: 0.2s; --x: -260px; --y: -260px; }
+  .icon-2 { animation-delay: 0.4s; --x: 260px; --y: -260px; }
+  .icon-3 { animation-delay: 0.6s; --x: -350px; --y: 230px; }
+  .icon-4 { animation-delay: 0.8s; --x: 300px; --y: 130px; }
+  .icon-5 { animation-delay: 1s;   --x: 0px;   --y: 300px; }
+  
+  @keyframes floatIcon {
+    0%   { transform: translate(var(--x), var(--y)) scale(1.2) translateY(0px); }
+    50%  { transform: translate(var(--x), var(--y)) scale(1.2) translateY(-15px); }
+    100% { transform: translate(var(--x), var(--y)) scale(1.2) translateY(0px); }
+  }
+  
+  
+  @keyframes floatIcon {
+    0%   { transform: translate(var(--x), var(--y)) scale(1.2) translateY(0px); }
+    50%  { transform: translate(var(--x), var(--y)) scale(1.2) translateY(-10px); }
+    100% { transform: translate(var(--x), var(--y)) scale(1.2) translateY(0px); }
+  }
+  
+  .welcome-message {
+    margin-top: 4rem;
+    text-align: center;
+    border: 2px solid #e4cdcd;
+    border-radius: 2vh;
+    padding: 4%;
+    box-shadow: 0px 0px 20px #6a1b9a;
+    background-color: #ffc6e0;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #c2185b;
+    }
+  
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      color: #6a1b9a;
+    }
+  
+    button {
+      margin: 5%;
+      border: none;
+      border-radius: 1rem;
+      background-color: #db70a0;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    button:hover {
+      background-color: #c0578e;
+    }
+  }
+  .icon {
+    position: absolute;
+    font-size: 2rem;
+    transform: translate(-200px, -200px);
+    opacity: 1;
+  }
+  
+  .full-width {
+    width: 100% !important;
+  }
+  .disabled-row {
+    background-color: #f0f0f0; 
+    opacity: 0.6;    
+    pointer-events: none;  
+  }
+  .espacio{
+    border: 5px solid #000;
+  }

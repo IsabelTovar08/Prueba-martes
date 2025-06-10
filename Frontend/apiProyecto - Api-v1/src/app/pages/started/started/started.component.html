@@ -1,0 +1,51 @@
+<div class="start-wrapper">
+  <div class="center-icon" [@iconExpand]="iconState">
+    ✅
+  </div>
+
+  <div class="icon-burst" *ngIf="showExtras">
+    <span class="icon icon-1">💅</span>
+    <span class="icon icon-2">✂️</span>
+    <span class="icon icon-3">💄</span>
+    <span class="icon icon-4">🧴</span>
+    <span class="icon icon-5">🪞</span>
+  </div>
+
+  <div class="welcome-message" *ngIf="showExtras" @fadeIn>
+    <h2>Bienvenido</h2>
+    <p>Inicia sesión para continuar</p>
+
+    <div class="login-container" style="max-width: 600px; margin: auto;">
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Correo electrónico</mat-label>
+          <input matInput type="email" formControlName="email" required>
+          <mat-error *ngIf="loginForm.get('userName')?.hasError('required')">
+            Campo obligatorio
+          </mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>Contraseña</mat-label>
+          <input matInput type="password" formControlName="password" required>
+          <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
+            Campo obligatorio
+          </mat-error>
+          <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')">
+            La contraseña debe incluir mínimo 6 caracteres
+          </mat-error>
+          <mat-error *ngIf="loginForm.get('password')?.hasError('pattern')">
+            La contraseña debe incluir letras y números
+          </mat-error>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">
+          Ingresar
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mueve esto fuera del *ngIf pero controla su visibilidad -->
+  <div id="google-signin-button" [ngClass]="{ 'hidden': !showExtras }" (click)="onGoogleLogin()">Google</div>
+</div>

@@ -1,0 +1,57 @@
+<h1>Roles</h1>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>roles</mat-card-title>
+    <button mat-raised-button color="primary" (click)="openFormCreate()">Agregar
+      rol</button>
+  </mat-card-header>
+
+  <mat-table [dataSource]="roles" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef>Nombre</mat-header-cell>
+      <mat-cell *matCellDef="let rol">{{rol.name}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="description">
+      <mat-header-cell *matHeaderCellDef>Descripción</mat-header-cell>
+      <mat-cell *matCellDef="let rol">{{rol.description}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="status">
+      <mat-header-cell *matHeaderCellDef>Estado</mat-header-cell>
+      <mat-cell *matCellDef="let rol">
+        <p><mat-slide-toggle
+            [(ngModel)]="rol.status"
+            (click)="toggleIsActive(rol)"
+            [disabled]="isDisabled(rol)">
+          </mat-slide-toggle>
+          {{rol.status ? 'Activado' : 'Desactivado'}}
+        </p>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>Acciones</mat-header-cell>
+      <mat-cell *matCellDef="let rol">
+        <button mat-icon-button
+          (click)="roleseleccionado = rol; editroles()"
+          [disabled]="isDisabled(rol)">
+          <mat-icon>edit</mat-icon>
+        </button>
+
+        <button mat-icon-button
+          (click)="deleteroles(rol)"
+          [disabled]="isDisabled(rol)">
+          <mat-icon>delete</mat-icon>
+        </button>
+
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row
+      *matRowDef="let row; columns: displayedColumns">
+    </mat-row>
+
+  </mat-table>
+</mat-card>

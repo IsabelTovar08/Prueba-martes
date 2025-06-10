@@ -1,0 +1,41 @@
+<h1>Users</h1>
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Users</mat-card-title>
+      <button mat-raised-button color="primary" (click)="openFormCreate()">Agregar user</button>
+    </mat-card-header>
+  
+    <mat-table [dataSource]="users" class="mat-elevation-z8">
+  
+      <ng-container matColumnDef="userName">
+        <mat-header-cell *matHeaderCellDef>Nombre</mat-header-cell>
+        <mat-cell *matCellDef="let user">{{user.userName}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="status">
+        <mat-header-cell *matHeaderCellDef>Estado</mat-header-cell>
+        <mat-cell *matCellDef="let user">
+          <p><mat-slide-toggle [(ngModel)]="user.status" (click)="toggleIsActive(user)"></mat-slide-toggle></p>
+        </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="personId">
+        <mat-header-cell *matHeaderCellDef>Nombre Persona</mat-header-cell>
+        <mat-cell *matCellDef="let user">{{user.namePerson}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef>Acciones</mat-header-cell>
+        <mat-cell *matCellDef="let user">
+          <button mat-icon-button (click)="editusers(userSeleccionado = user)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button (click)="deleteusers(user)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </mat-card>
+  

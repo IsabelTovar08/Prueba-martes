@@ -1,0 +1,12 @@
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\bin\Debug\Diagram.dll.config
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\bin\Debug\Diagram.dll
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\bin\Debug\Diagram.pdb
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\bin\Debug\EntityFramework.dll
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\bin\Debug\EntityFramework.xml
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\obj\Debug\Diagram.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\obj\Debug\Diagram.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\obj\Debug\Diagram.csproj.Up2Date
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\obj\Debug\Diagram.dll
+C:\Users\USUARIO\Documents\REPOSITORIOS\Prueba-martes\Backend\TallerBack\Diagram\obj\Debug\Diagram.pdb

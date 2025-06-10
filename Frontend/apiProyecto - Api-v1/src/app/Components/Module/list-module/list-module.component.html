@@ -1,0 +1,17 @@
+<h1>modules</h1>
+
+<app-generic-table
+  [title]="'Módulos'"
+  [dataSource]="modules"
+  [displayedColumns]="displayedColumns"
+  [columns]="[
+      { key: 'name', label: 'Nombre' },
+      { key: 'description', label: 'Descripción' },
+      { key: 'status', label: 'Estado' }
+
+    ]"
+  (onCreate)="openFormCreate()"
+  (onEdit)="editmodules($event)"
+  (onDelete)="deletemodules($event)"
+  (onToggleStatus)="toggleIsActive($event)">
+</app-generic-table>

@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF00D44F-A074-422C-A10E-EBB0C7561134}|Data\\Data.csproj|c:\\users\\usuario\\documents\\repositorios\\prueba-martes\\backend\\tallerback\\data\\classes\\specifics\\reservadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF00D44F-A074-422C-A10E-EBB0C7561134}|Data\\Data.csproj|solutionrelative:data\\classes\\specifics\\reservadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF00D44F-A074-422C-A10E-EBB0C7561134}|Data\\Data.csproj|c:\\users\\usuario\\documents\\repositorios\\prueba-martes\\backend\\tallerback\\data\\classes\\base\\crudbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF00D44F-A074-422C-A10E-EBB0C7561134}|Data\\Data.csproj|solutionrelative:data\\classes\\base\\crudbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF00D44F-A074-422C-A10E-EBB0C7561134}|Data\\Data.csproj|c:\\users\\usuario\\documents\\repositorios\\prueba-martes\\backend\\tallerback\\data\\classes\\specifics\\vehiculodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF00D44F-A074-422C-A10E-EBB0C7561134}|Data\\Data.csproj|solutionrelative:data\\classes\\specifics\\vehiculodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC766D28-BA11-4027-B7DC-211A1F055045}|Business\\Business.csproj|c:\\users\\usuario\\documents\\repositorios\\prueba-martes\\backend\\tallerback\\business\\classes\\userbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC766D28-BA11-4027-B7DC-211A1F055045}|Business\\Business.csproj|solutionrelative:business\\classes\\userbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC766D28-BA11-4027-B7DC-211A1F055045}|Business\\Business.csproj|c:\\users\\usuario\\documents\\repositorios\\prueba-martes\\backend\\tallerback\\business\\classes\\reservabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC766D28-BA11-4027-B7DC-211A1F055045}|Business\\Business.csproj|solutionrelative:business\\classes\\reservabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC766D28-BA11-4027-B7DC-211A1F055045}|Business\\Business.csproj|c:\\users\\usuario\\documents\\repositorios\\prueba-martes\\backend\\tallerback\\business\\classes\\base\\basebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC766D28-BA11-4027-B7DC-211A1F055045}|Business\\Business.csproj|solutionrelative:business\\classes\\base\\basebusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2819E642-0771-4F40-95EE-E46DD4BC5634}|Helper\\Helper.csproj|c:\\users\\usuario\\documents\\repositorios\\prueba-martes\\backend\\tallerback\\helper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2819E642-0771-4F40-95EE-E46DD4BC5634}|Helper\\Helper.csproj|solutionrelative:helper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAF4D591-FA76-490C-8BB1-D96DC02C50D3}|Web\\Web.csproj|c:\\users\\usuario\\documents\\repositorios\\prueba-martes\\backend\\tallerback\\web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF4D591-FA76-490C-8BB1-D96DC02C50D3}|Web\\Web.csproj|solutionrelative:web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC766D28-BA11-4027-B7DC-211A1F055045}|Business\\Business.csproj|c:\\users\\usuario\\documents\\repositorios\\prueba-martes\\backend\\tallerback\\business\\services\\jwt\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC766D28-BA11-4027-B7DC-211A1F055045}|Business\\Business.csproj|solutionrelative:business\\services\\jwt\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAF4D591-FA76-490C-8BB1-D96DC02C50D3}|Web\\Web.csproj|c:\\users\\usuario\\documents\\repositorios\\prueba-martes\\backend\\tallerback\\web\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAF4D591-FA76-490C-8BB1-D96DC02C50D3}|Web\\Web.csproj|solutionrelative:web\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CrudBase.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Data\\Classes\\Base\\CrudBase.cs",
+              "RelativeDocumentMoniker": "Data\\Classes\\Base\\CrudBase.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Data\\Classes\\Base\\CrudBase.cs",
+              "RelativeToolTip": "Data\\Classes\\Base\\CrudBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T23:10:21.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservaData.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Data\\Classes\\Specifics\\ReservaData.cs",
+              "RelativeDocumentMoniker": "Data\\Classes\\Specifics\\ReservaData.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Data\\Classes\\Specifics\\ReservaData.cs",
+              "RelativeToolTip": "Data\\Classes\\Specifics\\ReservaData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T23:09:31.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VehiculoData.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Data\\Classes\\Specifics\\VehiculoData.cs",
+              "RelativeDocumentMoniker": "Data\\Classes\\Specifics\\VehiculoData.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Data\\Classes\\Specifics\\VehiculoData.cs",
+              "RelativeToolTip": "Data\\Classes\\Specifics\\VehiculoData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T23:08:34.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Business\\Classes\\UserBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Classes\\UserBusiness.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Business\\Classes\\UserBusiness.cs",
+              "RelativeToolTip": "Business\\Classes\\UserBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T23:08:24.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReservaBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Business\\Classes\\ReservaBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Classes\\ReservaBusiness.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Business\\Classes\\ReservaBusiness.cs",
+              "RelativeToolTip": "Business\\Classes\\ReservaBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T23:07:09.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Business\\Classes\\Base\\BaseBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Classes\\Base\\BaseBusiness.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Business\\Classes\\Base\\BaseBusiness.cs",
+              "RelativeToolTip": "Business\\Classes\\Base\\BaseBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T23:06:39.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Web\\Program.cs",
+              "RelativeDocumentMoniker": "Web\\Program.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Web\\Program.cs",
+              "RelativeToolTip": "Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T23:03:39.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Helper\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Helper\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Helper\\MappingProfile.cs",
+              "RelativeToolTip": "Helper\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T22:54:39.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Business\\Services\\JWT\\JwtService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\JWT\\JwtService.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Business\\Services\\JWT\\JwtService.cs",
+              "RelativeToolTip": "Business\\Services\\JWT\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T22:18:01.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Web\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\REPOSITORIOS\\Prueba-martes\\Backend\\TallerBack\\Web\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Web\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwCAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T22:15:22.954Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

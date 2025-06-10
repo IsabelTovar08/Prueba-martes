@@ -1,0 +1,44 @@
+<h1>permissions</h1>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>permissions</mat-card-title>
+    <button mat-raised-button color="primary" (click)="openFormCreate()">Agregar permission</button>
+  </mat-card-header>
+
+  <mat-table [dataSource]="permissions" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef>Nombre</mat-header-cell>
+      <mat-cell *matCellDef="let permission">{{permission.name}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="description">
+      <mat-header-cell *matHeaderCellDef>Descripción</mat-header-cell>
+      <mat-cell *matCellDef="let permission">{{permission.description}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="status">
+      <mat-header-cell *matHeaderCellDef>Estado</mat-header-cell>
+      <mat-cell *matCellDef="let permission">
+        <p><mat-slide-toggle [(ngModel)]="permission.status" (click)="toggleIsActive(permission)"></mat-slide-toggle></p>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>Acciones</mat-header-cell>
+      <mat-cell *matCellDef="let permission">
+        <button mat-icon-button (click)="editpermissions(permissionseleccionado = permission)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="deletepermissions(permission)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</mat-card>
+
+
+

@@ -1,0 +1,41 @@
+<h1>userRoles</h1>
+
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>userRoles</mat-card-title>
+        <button mat-raised-button color="primary"
+            (click)="openFormCreate()">Agregar rol</button>
+    </mat-card-header>
+
+    <mat-table [dataSource]="userRoles" class="mat-elevation-z8">
+
+            <ng-container matColumnDef="rolName">
+                <mat-header-cell *matHeaderCellDef>Nombre del ROl</mat-header-cell>
+                <mat-cell
+                    *matCellDef="let userRol">{{userRol.rolName}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="userName">
+                <mat-header-cell *matHeaderCellDef>UserName</mat-header-cell>
+                <mat-cell
+                    *matCellDef="let userRol">{{userRol.userName}}</mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="actions">
+                <mat-header-cell *matHeaderCellDef>Acciones</mat-header-cell>
+                <mat-cell *matCellDef="let userRol">
+                    <button mat-icon-button
+                        (click)="edituserRoles(userRoleseleccionado = userRol)">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-icon-button
+                        (click)="deleteuserRoles(userRol)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </mat-cell>
+            </ng-container>
+
+            <mat-header-row
+                *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+    </mat-card>

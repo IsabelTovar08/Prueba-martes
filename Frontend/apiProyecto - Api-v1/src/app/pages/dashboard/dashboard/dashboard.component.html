@@ -1,0 +1,41 @@
+<mat-sidenav-container class="sidenav-container">
+  <!-- Sidenav a la izquierda -->
+  <mat-sidenav #sidenav mode="side" [opened]="isSidenavOpen" position="start">
+    <mat-nav-list>
+      <div class="side-toggle-button menu">
+        <button mat-icon-button (click)="sidenav.toggle()" aria-label="Toggle sidenav">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <br>
+      <button mat-button (click)="logout()">Cerrar sesión</button>
+      <div *ngIf="isAdmin">Administrador con todos los permisos</div>
+      <!-- Configuración -->
+      <h3 class="sidenav-section-title">
+        <mat-icon>settings</mat-icon>ModelSecurity
+      </h3>
+
+      <a mat-list-item routerLink="/dashboard/user">
+        User
+      </a>
+      <a mat-list-item routerLink="/dashboard/Reserva">
+        Reservas
+      </a>
+      
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- Botón fijo arriba a la izquierda -->
+    <div class="side-toggle-button">
+      <button mat-icon-button (click)="sidenav.toggle()" aria-label="Toggle sidenav">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="section-content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,37 @@
+<form [formGroup]="rolFormPermissionForm">
+    <mat-dialog-content>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>rol</mat-label>
+        <mat-select formControlName="rolId">
+          <mat-option *ngFor="let rol of roles" [value]="rol.id">
+            {{ rol.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>user</mat-label>
+        <mat-select formControlName="formId">
+          <mat-option *ngFor="let user of forms" [value]="user.id">
+            {{ user.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>user</mat-label>
+        <mat-select formControlName="permissionId">
+          <mat-option *ngFor="let user of permissions" [value]="user.id">
+            {{ user.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+     
+    </mat-dialog-content>
+  
+    <mat-dialog-actions align="end">
+      <button mat-button>Cancelar</button>
+      <button mat-flat-button color="primary" (click)="guardarform()" [disabled]="!rolFormPermissionForm.valid">
+        {{ isEditMode ? 'Actualizar' : 'Guardar' }}
+      </button>
+    </mat-dialog-actions>
+  </form>
+  

@@ -1,0 +1,37 @@
+<h1>moduleForms</h1>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>moduleForms</mat-card-title>
+    <button mat-raised-button color="primary" (click)="openFormCreate()">Agregar module</button>
+  </mat-card-header>
+
+  <mat-table [dataSource]="moduleForms" class="mat-elevation-z8">
+    <ng-container matColumnDef="nameForm">
+        <mat-header-cell *matHeaderCellDef>Mombre Formulario</mat-header-cell>
+        <mat-cell *matCellDef="let module">{{module.nameForm}}</mat-cell>
+      </ng-container>
+    <ng-container matColumnDef="nameModule">
+      <mat-header-cell *matHeaderCellDef>Nombre módulo</mat-header-cell>
+      <mat-cell *matCellDef="let module">{{module.nameModule}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>Acciones</mat-header-cell>
+      <mat-cell *matCellDef="let module">
+        <button mat-icon-button (click)="editmoduleForms(moduleFormseleccionado = module)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="deletemoduleForms(module)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</mat-card>
+
+
+

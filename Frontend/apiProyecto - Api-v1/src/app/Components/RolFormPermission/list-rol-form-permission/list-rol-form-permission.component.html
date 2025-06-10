@@ -1,0 +1,54 @@
+<h1>rolFormPermissions</h1>
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>rolFormPermissions</mat-card-title>
+    <button mat-raised-button color="primary" (click)="openFormCreate()">Agregar module</button>
+  </mat-card-header>
+
+  <mat-table [dataSource]="rolFormPermissions" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="rolId">
+      <mat-header-cell *matHeaderCellDef>rolId</mat-header-cell>
+      <mat-cell *matCellDef="let module">{{module.rolId}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="rolName">
+        <mat-header-cell *matHeaderCellDef>Mombre Formulario</mat-header-cell>
+        <mat-cell *matCellDef="let module">{{module.rolName}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="formId">
+        <mat-header-cell *matHeaderCellDef>formId</mat-header-cell>
+        <mat-cell *matCellDef="let module">{{module.formId}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="formName">
+          <mat-header-cell *matHeaderCellDef>Mombre Formulario</mat-header-cell>
+          <mat-cell *matCellDef="let module">{{module.formName}}</mat-cell>
+        </ng-container>
+    <ng-container matColumnDef="permissionId">
+      <mat-header-cell *matHeaderCellDef>permissionId</mat-header-cell>
+      <mat-cell *matCellDef="let module">{{module.permissionId}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="permissionName">
+      <mat-header-cell *matHeaderCellDef>Nombre módulo</mat-header-cell>
+      <mat-cell *matCellDef="let module">{{module.permissionName}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef>Acciones</mat-header-cell>
+      <mat-cell *matCellDef="let module">
+        <button mat-icon-button (click)="editrolFormPermissions(rolFormPermissionseleccionado = module)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="deleterolFormPermissions(module)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</mat-card>
+
+
+
